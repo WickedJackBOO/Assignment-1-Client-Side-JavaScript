@@ -1,0 +1,51 @@
+body {
+    text-align: center; /* center the text */
+}
+
+#board {
+    display: flex; /* use flexbox to align the columns */
+    gap: 10px;     /* space between columns */
+}
+
+.column {
+    padding: 10px;       /* padding inside each column */
+    width: 120px;        /* width of each column */
+    color: #fff;       /* text color */
+    border-radius: 10px; /* rounded corners */
+}
+
+.column button {
+    border: none;   /* remove default button border */
+    border-radius: 50%; /* make it round */
+    width: 40px;       /* width of the button */
+    height: 40px;     /* height of the button */
+    cursor: pointer; /* so that you know that its a button */
+    color: black; /* text color */
+}
+
+ul {
+    list-style: none;/* remove default list style */
+    padding: 0;     /* remove default padding */
+}                  /* because it all looks bad */
+
+li {
+    padding: 5px; /* padding inside each list item */
+}
+
+.selected {
+    background: #fff; /* background color for selected items */
+    color: black; /* text color for selected items so that you can see it */
+    font-weight: bold; /* make selected items bold so that you can see it agan */
+    border-radius: 5px; /* rounded corners for selected items */
+}
+
+#actions {
+    margin-top: 20px; /* spaaaaaaaaace */
+}
+
+/* Color Strips */
+.color1 { background: purple; }
+.color2 { background: dodgerblue; }
+.color3 { background: limegreen; }
+.color4 { background: orange; }
+.color5 { background: hotpink; }
