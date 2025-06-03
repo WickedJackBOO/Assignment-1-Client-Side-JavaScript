@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
-    <title>See N Say Storymaker</title>
+    <title>See N Say Storymaker</title> <!-- title of the page -->
+    <link rel="stylesheet" href="style.css"> <!-- link to the CSS file -->
 </head>
 <body>
-    <h1>See N Say Storymaker</h1>
+    <h1>See N Say Storymaker</h1> <!-- big title at the top -->
 
-    <div id="board">
+    <div id="board"> <!-- where all the word columns are -->
 
+        <!-- column 1 -->
         <div class="column color1">
-            <button>1</button>
-            <ul id="list0">
+            <button onclick="nextWord(0)">1</button> <!-- cycle button for list 1 -->
+            <ul id="list0"> <!-- list 1 -->
+                <!-- words in list 1 -->
                 <li>The turkey</li>
                 <li>Mom</li>
                 <li>Dad</li>
@@ -22,9 +25,11 @@
             </ul>
         </div>
 
+        <!-- column 2 -->
         <div class="column color2">
-            <button>2</button>
-            <ul id="list1">
+            <button onclick="nextWord(1)">2</button> <!-- cycle button for list 2 -->
+            <ul id="list1"> <!-- list 2 -->
+                <!-- words in list 2 -->
                 <li>sat on</li>
                 <li>ate</li>
                 <li>danced with</li>
@@ -34,9 +39,11 @@
             </ul>
         </div>
 
+        <!-- column 3 -->
         <div class="column color3">
-            <button>3</button>
-            <ul id="list2">
+            <button onclick="nextWord(2)">3</button> <!-- cycle button for list 3 -->
+            <ul id="list2"> <!-- list 3 -->
+                <!-- words in list 3 -->
                 <li>a funny</li>
                 <li>a scary</li>
                 <li>a goofy</li>
@@ -46,9 +53,11 @@
             </ul>
         </div>
 
+        <!-- column 4 -->
         <div class="column color4">
-            <button>4</button>
-            <ul id="list3">
+            <button onclick="nextWord(3)">4</button> <!-- cycle button for list 4 -->
+            <ul id="list3"> <!-- list 4 -->
+                <!-- words in list 4 -->
                 <li>goat</li>
                 <li>monkey</li>
                 <li>fish</li>
@@ -59,9 +68,11 @@
             </ul>
         </div>
 
+        <!-- column 5 -->
         <div class="column color5">
-            <button>5</button>
-            <ul id="list4">
+            <button onclick="nextWord(4)">5</button> <!-- cycle button for list 5 -->
+            <ul id="list4"> <!-- list 5 -->
+                <!-- words in list 5 -->
                 <li>on the moon</li>
                 <li>on the chair</li>
                 <li>in my spaghetti</li>
@@ -72,12 +83,13 @@
         </div>
     </div>
 
-    <div id="actions">
-        <button>Surprise</button>
-        <button>Playback</button>
+    <div id="actions"> <!-- buttons for actions -->
+        <button onclick="makeRandomStory()">Surprise</button> <!-- make a random sentence -->
+        <button onclick="sayStory()">Playback</button> <!-- read it out loud -->
     </div>
 
-    <p id="story-output"></p>
+    <p id="story-output"></p> <!-- where the sentence shows up -->
 
+    <script src="script.js"></script> <!-- link to the js file -->
 </body>
 </html>
